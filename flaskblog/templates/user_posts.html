@@ -1,4 +1,6 @@
-{% extends "layout.html" %} {% block content %} {% for post in posts.items %}
+{% extends "layout.html" %} {% block content %}
+<h1 class="mb-3">Posts by {{user.username}} ({{posts.total}})</h1>
+{% for post in posts.items %}
 <article class="d-flex content-section">
   <img
     src="{{url_for('static', filename='profile_pics/' + post.author.image_file)}}"
