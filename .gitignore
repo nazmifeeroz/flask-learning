@@ -1,2 +1,5 @@
 __pycache__
 venv
+.DS_Store
+flaskblog/static/profile_pics/*
+flaskblog/site.db
